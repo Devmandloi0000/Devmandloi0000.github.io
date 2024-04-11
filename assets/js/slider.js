@@ -17,4 +17,4 @@ function showSlide(index) {
 setInterval(() => {
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
-}, 5000); // Switch every 5 seconds
+}, 2000); // Switch every 5 seconds
