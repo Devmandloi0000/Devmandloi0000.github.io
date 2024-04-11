@@ -2037,6 +2037,49 @@ input, select, textarea {
 					background: #252525;
 				}
 
+
+/* Slider Styles */
+.slider {
+    overflow: hidden;
+}
+
+.slider .slide {
+    display: none;
+}
+
+.slider .slide.active {
+    display: block;
+}
+
+.centered-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centered-slide img {
+    width: 400px; /* Adjust this value as needed */
+    height: 300px; /* Adjust this value as needed */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the h3 and p tags within each slide */
+.centered-slide h3 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.centered-slide p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+
+
+
 /* Nav */
 
 	#nav {
