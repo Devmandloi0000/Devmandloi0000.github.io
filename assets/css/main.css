@@ -2492,33 +2492,3 @@ input, select, textarea {
 	}
 
 
-/* ===== Portfolio Image Fix ===== */
-
-/* Ensure all boxes have equal height */
-.box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-/* Fix image container */
-.box .image {
-    width: 100%;
-    height: 250px; /* same height for all */
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-/* Fix actual image */
-.box .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* keeps image ratio & fills properly */
-}
-
-/* Optional: spacing consistency */
-.row > * {
-    display: flex;
-}
-
