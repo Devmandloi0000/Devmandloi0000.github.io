@@ -1631,7 +1631,7 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.image img {
+		.image img 
 			display: block;
 			width: 100%;
 		}
@@ -2490,3 +2490,47 @@ input, select, textarea {
 					}
 
 	}
+
+
+
+/* --- ADD THIS AT THE VERY END OF YOUR FILE --- */
+
+/* 1. Ensure all images behave and don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 2. Fix Portfolio Grid Alignment */
+.image.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+    overflow: hidden; /* Keeps things tidy */
+}
+
+.image.fit img {
+    width: 100%;
+    display: block;
+    /* This forces all images to be the same height without stretching */
+    aspect-ratio: 3 / 2; 
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* 3. Mobile Specific Alignment Fix */
+@media screen and (max-width: 736px) {
+    .row {
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+    }
+    
+    .row > * {
+        padding: 10px 0 !important;
+        width: 100% !important; /* Forces images to stack properly on phones */
+    }
+
+    .dev {
+        margin-top: 40px; /* Fixes that huge top margin on mobile */
+    }
+		}
